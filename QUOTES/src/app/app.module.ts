@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { QUOTESComponent } from './quotes/quotes.component';
 import { DateCountPipe } from './date-count.pipe';
-import { QUOTESFormComponent } from './quotes-form/quotes-form.component';
+import { QuoteFormComponent } from './quotes-form/quotes-form.component';
 import { QUOTESDetailsComponent } from './quotes-details/quotes-details.component';
 
 @NgModule({
@@ -12,11 +13,12 @@ import { QUOTESDetailsComponent } from './quotes-details/quotes-details.componen
     AppComponent,
     QUOTESComponent,
     DateCountPipe,
-    QUOTESFormComponent,
+    QuoteFormComponent,
     QUOTESDetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

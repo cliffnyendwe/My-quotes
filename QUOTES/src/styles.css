@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+span{
+    color:orangered;
+    text-decoration:underline;
+}
+li{
+    list-style-type:none;
+}
