@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+span{
+    color:orangered !important;
+    text-decoration:underline !important;
+}
+li{
+    list-style-type:none !important;
+}
+body{
+    background-color: grey !important;
+}
