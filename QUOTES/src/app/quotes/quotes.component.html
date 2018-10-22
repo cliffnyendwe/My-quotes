@@ -4,10 +4,11 @@
 <div *ngFor="let QUOTE of QUOTES;let i=index">
   <li>{{QUOTE.name}} by <span>{{QUOTE.author}}</span> </li>
   <span>{{QUOTE.upVote}} </span>
-  <button (click)="upVote(i)">like</button>
+  <button class="btn btn-outline-primary"(click)="upVote(i)">like</button>
   <span>{{QUOTE.downVote}}</span>
-  <button (click)="downVote(i)">dislike</button>
-  <button class="text-danger" (click)="del(i)">Delete</button>
+  <button class="btn btn-outline-primary"(click)="downVote(i)">dislike</button>
+  <button class="btn btn-outline-primary" (click)="del(i)">Delete</button>
 </div>
+<br>
 <app-quotes-details *ngIf="QUOTES.showDescription" [QUOTE]="QUOTE" (isComplete)='deleteQUOTES($event,i)'></app-quotes-details>
 <app-quotes-form (addQuotes)="new($event)"></app-quotes-form>
